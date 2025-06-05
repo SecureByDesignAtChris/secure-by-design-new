@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/secure-by-design-new/',
+  base: 'https://securebydesign.dk/',
   build: {
     outDir: 'dist',
     sourcemap: true,
