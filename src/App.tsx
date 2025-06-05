@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Ydelser from './pages/Ydelser'
 import Kontakt from './pages/Kontakt'
+import NotFound from './pages/NotFound'
 import Footer from './components/Footer'
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/ydelser" element={<Ydelser />} />
             <Route path="/kontakt" element={<Kontakt />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />
