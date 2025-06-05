@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/',
+  base: '/secure-by-design-new/',
   build: {
     outDir: 'dist',
     sourcemap: true,
@@ -16,4 +16,13 @@ export default defineConfig({
       },
     },
   },
+  resolve: {
+    alias: {
+      '@': '/src',
+    },
+  },
+  server: {
+    port: 3000,
+    host: true
+  }
 })
